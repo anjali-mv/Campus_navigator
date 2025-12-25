@@ -1,0 +1,17 @@
+<div id="map" style="height: 400px; width: 100%;"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+<script>
+  // Center map on your "Campus" coordinates
+  var map = L.map('map').setView([12.2958, 76.6394], 15); 
+  
+  // Add map style
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+  // Add a GPS marker
+  L.marker([12.2958, 76.6394]).addTo(map)
+    .bindPopup('You are here: Campus Center')
+    .openPopup();
+</script>

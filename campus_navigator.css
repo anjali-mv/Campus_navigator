@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    background-color: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;   /* 🔥 KEY FIX */
+    height: 100vh;
+    padding-top: 40px;
+}
+
+.chat-container {
+    width: 650px;
+    background-color: #f5f5f5;
+    padding: 2em;
+    border-radius: 10px;
+    height: 80vh;          /* 🔥 REQUIRED */
+}
+h1 {
+    margin-bottom: 5px;
+    font-weight: 900;
+    color: #000;
+}
+
+.subtitle {
+    margin-top: 0;
+    font-weight: bold;
+    color: #333333;
+}
+
+.chat-area {
+    height: calc(100% - 80px);   /* 🔥 KEY FIX */
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 1em;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+.chat {
+    max-width: 75%;
+    padding: 12px;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.user {
+    background-color: #e866e1;
+    color: white;
+    margin-left: auto;
+    text-align: right;
+}
+
+.bot {
+    background-color: #e0e0e0;
+    color: black;
+    margin-right: auto;
+}
+.input-area {
+    position: relative;
+    z-index: 10000; /* higher than chat area */
+    height: 60px;
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.input-area input {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #7e1a1a;
+    border-radius: 5px;
+}
+
+.input-area input::placeholder {
+    color: #430e0e;
+}
+
+.input-area button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+    background-color: #b3007d;
+    color: white;
+    cursor: pointer;
+}
+
+.input-area button:hover {
+    background-color: #5b84b3;
+}
+
+button {
+    pointer-events: auto !important;
+    z-index: 99999 !important;
+    position: relative !important;
+}
+#gpsBtn {
+    position: relative;
+    z-index: 9999;
+    pointer-events: auto;
+}
