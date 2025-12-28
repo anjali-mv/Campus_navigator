@@ -1,5 +1,5 @@
 # Campus Navigator 🎓📍
-![Campus Navigator Banner](assets/banner.png)
+![Campus Navigator Banner](assets/demo.png)
 [![Reflex](https://img.shields.io/badge/Reflex-F5F5F5?style=for-the-badge&logo=reflex&logoColor=black)](https://reflex.dev/)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
 [![Status](https://img.shields.io/badge/Status-Hackathon_MVP-success?style=for-the-badge)]()
